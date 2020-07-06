@@ -1,0 +1,102 @@
+
+html {
+    background-color: #D94A4A;
+}
+
+select#breeds, button#breed-info {
+    display: block;
+    background-color: #cde8e6;
+    font-size: 1em;
+    padding: 4px;
+    border: 2px solid rgb(21, 21, 21);
+    border-radius: 5px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+section{
+    background-color: #F19494;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+section#left h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 0;
+}
+
+section#right p{
+    display: flex;
+    border-bottom: 2px solid #F19494;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 4px;
+}
+
+section#right label {
+    display: inline-block;
+    font: bold 1.2em "serif";
+    min-width: 150px;
+}
+
+section#right span {
+    display: inline-block;
+    font: normal 18px "serif";
+    min-width: 200px;
+}
+
+/*Flex Box*/
+section#bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border: 2px solid black;
+    justify-content: center;
+}
+
+img {
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
+
+/*CSS Grid*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "dropdown description";
+}
+
+section#left{
+    grid-area: dropdown;
+}
+
+section#right{
+    grid-area: description;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
